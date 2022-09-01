@@ -1,0 +1,295 @@
+.footer__section {
+  background-color:$secondary-color;
+  padding: 60px 0;
+  
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__link {
+  color: $hover-color;
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.second__color-white {
+  color:white
+}
+
+.footer__address {
+  font-style: normal;
+}
+
+.footer__adrress-link{
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 24px;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover{
+    color: $primary-color;
+  }
+
+  &:focus{
+    color:$primary-color;
+  }
+}
+
+.footer__social {
+  padding-left: 70px;
+  padding-top: 15px;
+}
+
+.footer__social-title{
+  margin-bottom: 20px;
+  color:$primary-color;
+}
+
+
+.footer__social-list{
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-link {
+  color:$primary-color;
+  width: 44px;
+  display: flex;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover{
+    color:$primary-color;
+    background-color: $hover-color;
+  }
+
+  &:focus{
+    color:$primary-color;
+    background-color: $hover-color;
+  }
+}
+
+.footer__social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+.footer__social-icon {
+  fill: currentColor;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.subscription{
+  padding-left: 93px;
+  padding-top: 15px;
+}
+
+.subscription__title {
+  margin-bottom: 20px;
+  color: $primary-color;
+}
+
+.subscription__form{
+  display:flex
+}
+
+.subscription__input{
+  width: 343px;
+  height: 50px;
+  background-color: $secondary-color;
+  border: 1PX solid rgba(255, 255, 255, 0.3);
+  color:rgba(255, 255, 255, 0.6) ;
+  margin-right: 10px;
+  border-radius: 4px;
+  padding-left:13px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription__input:hover,
+.subscription__input:focus{
+  background-color:$secondary-color;
+  outline: none;
+  border-color: $primary-color;
+}
+
+.subscription__icon
+{
+  fill: $primary-color;
+  margin-left: 10px;
+
+}
+
+.subscription__button{
+  padding: 0 60px;
+  background-color: $hover-color;
+  color: $primary-color;
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Roboto';
+  font-weight: 700;
+  &:hover{
+    background-color:$background-color;
+    color: $primary-color;
+  }
+
+  &:focus{
+    background-color: $background-color;
+    color: $primary-color;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .footer__container{
+     display:inline-block;
+     text-align: center;
+    }
+  }
+
+  @media screen and (min-width:768px) {
+    .footer__container{
+       display:flex;
+       text-align: center;
+       flex-wrap: wrap;
+       justify-content: center;
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      .footer__container{
+         flex-wrap: none;
+        }
+      }
+
+  @media screen and (min-width:480px) {
+    .footer{
+       margin-bottom: 50px;
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      .footer{
+         margin-right: 165px;
+        }
+      }
+
+      @media screen and (min-width:1200px) {
+        .footer{
+           margin-right:0;
+           text-align: left;
+           margin-bottom: 0;
+          }
+        }
+
+    @media screen and (min-width:480px) {
+      .footer__social{
+        padding: 0;
+        display: inline-block;
+        margin-bottom: 60px;
+        }
+      }
+
+      @media screen and (min-width:1200px) {
+        .footer__social{
+          padding-top: 15px;
+          padding-left: 70px;
+          }
+        }
+
+      @media screen and (min-width:480px) {
+        .subscription{
+          padding: 0;
+          }
+        }
+
+        @media screen and (min-width:1200px) {
+          .subscription{
+            padding-left: 93px;
+            padding-top: 15px;
+            }
+          }
+    
+      @media screen and (min-width:480px) {
+          .subscription__title{
+            margin-bottom: 20px;
+            }
+          }
+
+      @media screen and (min-width:480px) {
+            .subscription__form{
+             flex-wrap: wrap;
+             justify-content: center;
+              }
+            }
+
+            @media only screen and (min-width:768px) {
+              .subscription__form{
+               flex-wrap: wrap;
+               justify-content: center;
+               flex-direction: column;
+               align-items: center;
+                }
+              }
+
+              @media screen and (min-width:1200px) {
+                .subscription__form{
+                display: flex;
+                flex-direction: inherit;
+                  }
+                }
+
+
+
+            @media screen and (min-width:480px) {
+              .subscription__input{
+               margin-bottom: 20px;
+               width: 450px;
+                }
+              }
+
+              @media screen and (min-width:1200px) {
+                .subscription__input{
+                 margin-bottom:0;
+                 width: 358px;
+                  }
+                }
+
+
+          
+              @media screen and (min-width:480px) {
+                .subscription__button{
+                padding: 10px 60px;
+                  }
+                }
+
+                @media screen and (min-width:768px) {
+                  .subscription__button{
+                  padding: 10px 48px;
+                    }
+                  }
+
+                  @media screen and (min-width:1200px) {
+                    .subscription__button{
+                    padding: 10 48px;
+                      }
+                    }
+
+
+
+
+
+    
