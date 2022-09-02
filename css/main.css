@@ -131,7 +131,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 7px;
+    padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -252,12 +252,18 @@ ul {
   color: #2196f3;
 }
 
-.is-open {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+@media screen and (min-width: 480px) {
+  .is-open {
+    visibility: visible;
+    opacity: 100%;
+  }
 }
-
+@media screen and (min-width: 480px) {
+  .mobile__menu {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 @media screen and (min-width: 480px) {
   .header__list {
     display: none;
@@ -331,6 +337,7 @@ ul {
     padding-top: 48px;
     padding-left: 40px;
     padding-right: 40px;
+    overflow-y: hidden;
   }
 }
 @media screen and (min-width: 768px) {
@@ -544,17 +551,46 @@ ul {
   .hero__section {
     background-size: 480px 400px;
     padding: 120px 60px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero__section {
+    background-image: url(../images/background-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero__section {
     background-size: 768px 400px;
+    padding: 120px 60px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__section {
+    background-image: url(../images/background-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__section {
     background-size: 1600px 600px;
     padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__section {
+    background-image: url(../images/background-2x.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .hero__section {
+    background-size: auto;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .hero__section {
+    background-size: auto;
   }
 }
 @media screen and (min-width: 480px) {
@@ -569,11 +605,6 @@ ul {
     font-size: 44px;
     line-height: 60px;
     letter-spacing: 0.06em;
-  }
-}
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero__section {
-    background-image: url(../images/background.jpg);
   }
 }
 .advantages {
@@ -1148,8 +1179,9 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .footer__social {
-    padding-top: 15px;
+    padding-top: 0;
     padding-left: 70px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1160,7 +1192,8 @@ ul {
 @media screen and (min-width: 1200px) {
   .subscription {
     padding-left: 93px;
-    padding-top: 15px;
+    padding-top: 0px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1426,17 +1459,17 @@ ul {
 
 @media screen and (min-width: 480px) {
   .modal {
-    top: 7%;
+    top: 12%;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
-    top: 9%;
+    top: 14%;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    top: 12%;
+    top: 50%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1499,7 +1532,7 @@ ul {
   border: none;
   font-family: "Roboto";
   padding: 5px 25px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portofolio__button:hover {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275), 0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725), 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
@@ -1678,7 +1711,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .picture__item:nth-child(3) {
-    margin-right: 0;
+    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1694,7 +1727,13 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .picture__item:nth-child(5) {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .picture__item:nth-child(5) {
     margin-left: 30px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1741,7 +1780,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
 }
 .team__social-link:hover {
@@ -1767,7 +1806,7 @@ ul {
 @media screen and (min-width: 768px) {
   .team__item {
     margin-bottom: 30px;
-    margin-right: 10px;
+    margin-right: 30px;
   }
 }
 @media screen and (min-width: 768px) {

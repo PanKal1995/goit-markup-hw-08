@@ -26,7 +26,7 @@
   border: none;
   font-family: 'Roboto';
   padding: 5px 25px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
   }
@@ -219,7 +219,7 @@
 
 @media screen and (min-width: 768px) {
   .picture__item:nth-child(3) {
-    margin-right: 0;
+    margin-right: 30px;
   }
 }
 
@@ -238,7 +238,14 @@
 
 @media screen and (min-width: 768px) {
   .picture__item:nth-child(5) {
+    margin-left:0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .picture__item:nth-child(5) {
     margin-left: 30px;
+    margin-bottom: 0;
   }
 }
 

@@ -97,11 +97,21 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
   &:focus{color: $hover-color;}
 }
 
-.is-open {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden
+
+@media screen and (min-width:480px) {
+  .is-open {
+    visibility: visible;
+    opacity: 100%;
+  }
 }
+
+@media screen and (min-width:480px) {
+  .mobile__menu{
+    visibility: hidden;  
+    opacity: 0;
+  }
+}
+
 
 @media screen and (min-width:480px) {
   .header__list{
@@ -190,7 +200,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
   padding-top: 48px;
   padding-left: 40px;
   padding-right: 40px;
-
+  overflow-y: hidden;
 }
 }
 
