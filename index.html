@@ -55,19 +55,20 @@
             >
           </li>
         </ul>
-<button class="menu__open-button" type="button" js-open-menu>
+<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" >
 <svg class= "navigation__tag" width="24px" height="16px"> 
   <use href="./images/icons.svg#icon-menu_24px"></use>
 </svg>
 </button>
 </div>
-<div class="mobile__menu is-open" js-menu-container>
-  <div class="container">
-    <button class="menu__close-button" type="button" js-close-menu>
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="mobile-menu">
+    <button class="menu-toggle js-close-menu">
       <svg class="navigation__close-tag" width="19px" height="19px">
         <use href="./images/icons.svg#icon-close_24px"></use>
       </svg>
     </button>
+    
     <ul class="mobile__list">
       <li class="mobile__item">
         <a class="mobile__link mobile__link-current" href="index.html">Studio</a>
