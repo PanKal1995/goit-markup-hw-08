@@ -1,7 +1,7 @@
 
 .hero__section {
   background-color: $secondary-color;
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 120px 0;
   display: flex;
   justify-content: center;
@@ -86,20 +86,6 @@
     }
   }
 }
-
-@media screen and (min-width:481px) and (max-width:767px){
-  .hero__section{
-    background-size: 100% 100%;
-    
-  }
-}
-
-@media screen and (min-width:769px) and (max-width:1199px){
-  .hero__section{
-    background-size: 100% 100%;
-  }
-}
-
 
 @media screen and (min-width: 1200px) {
   .hero__title {

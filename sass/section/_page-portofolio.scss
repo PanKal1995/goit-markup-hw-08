@@ -144,14 +144,31 @@
   line-height: 30px;
 }
 
+.project__image{
+  width:450px;
+  height:294px;
+  object-fit: cover;
+} 
+
+@media screen and (min-width: 768px) {
+  .project__image {
+    width:350px;
+    height:294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__image {
+    width:370px;
+  }
+}
+
 
 @media screen and (min-width: 1200px) {
   .portofolio__section {
     padding: 94px 0;
   }
 }
-
-
 
 @media screen and (min-width: 768px) {
   .portofolio {

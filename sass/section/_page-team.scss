@@ -1,32 +1,30 @@
-
-
 .team__section {
   background-color: $tritiary-color;
 }
 
 .team {
   padding: 0;
-  display:block;
+  display: block;
 
   &__item {
-    background-color:$primary-color;
+    background-color: $primary-color;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
     padding-bottom: 30px;
-    margin-bottom:30px;
-    width:450px;
+    margin-bottom: 30px;
+    width: 450px;
   }
 
   &__image {
     height: auto;
     min-width: 100%;
     display: block;
-    width:450px;
-    background-color:$primary-color;
-    
+    width: 450px;
+    background-color: $primary-color;
+    object-fit: cover;
   }
 
-  &__name{
+  &__name {
     color: $text-color;
     font-weight: 500;
     font-size: 16px;
@@ -36,7 +34,7 @@
   }
 
   &__title {
-    color:$icon-color;
+    color: $icon-color;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -44,70 +42,52 @@
   }
 }
 
-
-.team__item:nth-child(4){
+.team__item:nth-child(4) {
   margin-bottom: 0px;
-  }
+}
 
-
-
-@media screen and (min-width:1200px) {
-  .team{
+@media screen and (min-width: 1200px) {
+  .team {
     display: flex;
     justify-content: center;
-    }
   }
+}
 
-  @media screen and (min-width:768px) {
-    .team{
-      display:flex;
-      flex-wrap: wrap;
-      }
-    }
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
-  
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+}
 
-    @media screen and (min-width:768px) {
-      .team__item{
-        width: 354px;
-        }
-      }
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
+}
 
-      @media screen and (min-width:1200px) {
-        .team__item{
-          width: 270px;
-          }
-        }
+@media screen and (min-width: 1200px) {
+  .team__item:nth-child(4) {
+    margin-right: 0px;
+  }
+}
 
-      @media screen and (min-width:1200px) {
-          .team__item:nth-child(4){
-            margin-right: 0px;
-            }
-          }
-  
-   
-     
+@media screen and (min-width: 768px) {
+  .team__image {
+    width: 354px;
+  }
+}
 
-     @media screen and (min-width:480px) {
-      .team__image{
-        height: auto;
-        min-width: 100%;
-        display: block;
-        width:450px
-        }
-      }
-
-      @media screen and (min-width:768px) {
-        .team__image{
-          width:354px;
-          }
-        }
-
-        @media screen and (min-width:1200px) {
-          .team__image{
-            width: 270px;
-            height: 260px;
-            margin-bottom: 30px;
-            }
-          }
-        
+@media screen and (min-width: 1200px) {
+  .team__image {
+    width: 270px;
+    height: 260px;
+    margin-bottom: 30px;
+  }
+}
