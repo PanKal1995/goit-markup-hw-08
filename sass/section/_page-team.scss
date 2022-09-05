@@ -12,14 +12,14 @@
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
     padding-bottom: 30px;
     margin-bottom: 30px;
-    width: 450px;
+    width: 100%;
   }
 
   &__image {
     height: auto;
     min-width: 100%;
     display: block;
-    width: 450px;
+    width: 100%;
     background-color: $primary-color;
     object-fit: cover;
   }
