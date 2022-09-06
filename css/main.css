@@ -1089,7 +1089,7 @@ ul {
   z-index: 1;
 }
 
-@media screen and (max-height: 410px) {
+@media screen and (max-height: 479px) {
   .backdrop {
     overflow: scroll;
   }
@@ -1106,7 +1106,7 @@ ul {
   width: 100%;
 }
 
-@media screen and (max-height: 410px) {
+@media screen and (max-height: 479px) {
   .modal {
     top: 0;
     transform: translateX(-50%) scale(1) rotate(360deg);
