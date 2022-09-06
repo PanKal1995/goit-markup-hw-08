@@ -1089,6 +1089,11 @@ ul {
   z-index: 1;
 }
 
+@media screen and (max-height: 410px) {
+  .backdrop {
+    overflow: scroll;
+  }
+}
 .modal {
   padding: 40px;
   background: #ffffff;
@@ -1101,6 +1106,13 @@ ul {
   width: 100%;
 }
 
+@media screen and (max-height: 410px) {
+  .modal {
+    top: 0;
+    transform: translateX(-50%) scale(1) rotate(360deg);
+    overflow: scroll;
+  }
+}
 .modal__close-button {
   position: absolute;
   top: 8px;
@@ -1529,7 +1541,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .picture__description {
-    width: 350px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
